@@ -32,8 +32,8 @@ const verificarIdLenguaje = (req,res,next) => {
     })
     console.log(idLenParam)
   if (idsActuales.includes(idLenParam)) { 
-    //   res.status(200);
-    //   res.json({`El siguiente ID: ${idParam} esta actualmente en uso.`});
+     res.status(200);
+      res.json();
     next();
   }else {
     res.status(400);

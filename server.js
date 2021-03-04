@@ -57,7 +57,7 @@ const response = amigos.map( ({ nombre, lenguajes }) => ({ nombre,lenguajes }) )
    app.put("/amigos/lenguajes/:id",middlewares.verificarIdLenguaje, (req, res) => {
     const idLenParam = req.params.id;
     const idLenBody = req.body;
-      amigos.forEach((h) => {
+      amigos.lenguajes.forEach((l) => {
         if (l.id == idLenParam) {
           l.lenguajes = idLenBody.id;
         }
