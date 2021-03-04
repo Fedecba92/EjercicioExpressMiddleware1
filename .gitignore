@@ -1,0 +1,23 @@
+lib-cov
+*.seed
+*.log
+*.out
+*.pid
+*.gz
+*.swp
+logs
+results
+# Coverage reports
+coverage
+# Dependency directory
+node_modules
+# OS metadata
+.DS_Store
+Thumbs.db
+# Ignore built ts files
+dist/**/*
+.vscode
+git.properties.json
+.idea
+# Local config files
+config/local*
